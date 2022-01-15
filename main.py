@@ -53,7 +53,7 @@ $$$$$$\ \$$$$$$  |$$ |$$ |$$ | \$$\ \$$$$$$$\
             sleep(1)
 
     if action == "1":
-        cookies = input("Use cookies? (default N) [y/n] >>\033[33m ")
+        cookies = input("\033[1;31mUse cookies? (default N) [y/n] >>\033[33m ")
         if cookies == "y" or cookies == "Y":
             try:
                 loginn = open("login.txt", "r")
