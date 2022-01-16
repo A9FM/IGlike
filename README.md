@@ -11,19 +11,30 @@ Best Tool For Increase Instagram Follower.
 
 ## Install in Termux
 `pkg up -y`
+
 `pkg install python3 -y`
+
 `pkg install git -y`
+
 `git clone https://github.com/A9FM/IGlike`
+
 `cd IGlike`
+
 `termux-wake-lock`
+
 `python3 main.py`
 
 ## Linux (deb)
 `apt update -y`
+
 `apt install python3 -y`
+
 `apt install git -y`
+
 `git clone https://github.com/A9FM/TGlike`
+
 `cd IGlike`
+
 `python3 IGlike`
 
 ## Windows
