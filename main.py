@@ -123,7 +123,8 @@ $$$$$$\ \$$$$$$  |$$ |$$ |$$ | \$$\ \$$$$$$$\
         os.remove("main.py")
         print(f"{logs} {red}Updating...")
         wget.download("https://raw.githubusercontent.com/A9FM/IGlike/main/main.py", "main.py", bar=False)
-        os.execv(sys.argv[0], sys.argv)
+        print(f"{logs} {red}Update succesfull! Please start script")
+        quit()
     if action == "9":
         goodbye()
 
