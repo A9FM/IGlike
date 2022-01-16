@@ -54,7 +54,7 @@ $$$$$$\ \$$$$$$  |$$ |$$ |$$ | \$$\ \$$$$$$$\
 -=-=-=-=-=-=-=-=-=( {version} )=-=-=-=-=-=-=-=-=-=-
 {yellow}
 [1] - Start Script
-[2] - Update (NOT WORK)
+[2] - Update
 [9] – Exit
 """)
         action = input(f"{red}>> {yellow}")
@@ -123,7 +123,7 @@ $$$$$$\ \$$$$$$  |$$ |$$ |$$ | \$$\ \$$$$$$$\
         os.remove("main.py")
         print(f"{logs} {red}Updating...")
         wget.download("https://raw.githubusercontent.com/A9FM/IGlike/main/main.py", "main.py", bar=False)
-        print(f"{logs} {red}Update succesfull! Please start script")
+        print(f"{logs} {red}Update succesfull! Shutdown...")
         quit()
     if action == "9":
         goodbye()
