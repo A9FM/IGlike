@@ -122,7 +122,8 @@ $$$$$$\ \$$$$$$  |$$ |$$ |$$ | \$$\ \$$$$$$$\
     if action == "2":
         os.remove("main.py")
         print(f"{logs} {red}Updating...")
-        wget.dowload("https://raw.githubusercontent.com/A9FM/IGlike/main/main.py", "main.py")
+        wget.download("https://raw.githubusercontent.com/A9FM/IGlike/main/main.py", "main.py", bar=False)
+        os.execv(sys.argv[0], sys.argv)
     if action == "9":
         goodbye()
 
