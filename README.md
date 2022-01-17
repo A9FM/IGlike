@@ -2,7 +2,7 @@
 instagram followers (a9fm)
 Best Tool For Increase Instagram Follower.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/A9FM/IGlike/main/screenshot.jpg">
+  <img src="https://raw.githubusercontent.com/A9FM/IGlike/main/screenshot.png">
 </p>
 
 ## Requirements
