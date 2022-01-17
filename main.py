@@ -17,6 +17,7 @@ try:
     from instagram_private_api import Client, ClientCompatPatch
 except:
     os.system("pip3 install git+https://git@github.com/ping/instagram_private_api.git@1.6.0")
+    from instagram_private_api import Client, ClientCompatPatch
 
 users = ["5791701778", "460563723", "26669533", "7719696", "247944034", "173560420", "18428658" ,"6380930", "232192182", "12281817", "305701719", "427553890", "12331195", "5457896418", "325734299", "212742998", "407964088", "7555881", "177402262", "19596899", "181306552", "1506607755", "184692323", "11830955", "25025320"]
 
@@ -24,18 +25,20 @@ users = ["5791701778", "460563723", "26669533", "7719696", "247944034", "1735604
 yellow = "\033[1;33m"
 red = "\033[1;31m"
 green = "\033[1;32m"
+cyan = "\33[1;36m"
+purple = "\33[1;35m"
 
 # Requirements
 logs = f"{yellow}LOGS |"
 good = f"{green}Good"
 fail = f"{red}Fail"
-version = "V:1.1"
+version = "V:1.2"
 
 def start():
     run = 666
     while run != 1:
         os.system('cls' if os.name == 'nt' else 'clear')
-        print(f"""{red}
+        print(f"""{green}
 $$$$$$\  $$$$$$\  $$\ $$\ $$\                 
 \_$$  _|$$  __$$\ $$ |\__|$$ |                
   $$ |  $$ /  \__|$$ |$$\ $$ |  $$\  $$$$$$\  
@@ -47,13 +50,14 @@ $$$$$$\ \$$$$$$  |$$ |$$ |$$ | \$$\ \$$$$$$$\
 
 -=-=-=-=-=-=-=-=-=( {version} )=-=-=-=-=-=-=-=-=-=-
 
-       [YT] - www.youtube.com/c/A9FM_top
-       [IG] - @a9fm_official
-       [TG] - @a9_fm
+    [{red}YouTube{green}] - www.youtube.com/c/A9FM_top
+        [{purple}Instagram{green}] - @a9fm_official
+           [{yellow}Site{green}] - a9fm.github.io
+              [{cyan}Telegram{green}] - @a9_fm
 
 -=-=-=-=-=-=-=-=-=( {version} )=-=-=-=-=-=-=-=-=-=-
 {yellow}
-[1] - Start Script
+[1] - Start Following
 [2] - Update
 [9] – Exit
 """)
@@ -80,6 +84,15 @@ $$$$$$\ \$$$$$$  |$$ |$$ |$$ | \$$\ \$$$$$$$\
             password = input(f"{logs} {red}Enter you password >>{yellow} ")
 
         api = Client(login, password)
+        try:
+            api.friendships_create("5791701778")
+            result = good
+            time = 5
+        except:
+            result = fail
+            time = 30
+        sleep(time)
+        print(f"{logs} {result} |   Subs [Owner Script]. Sleep {str(time)} sec")
 
         my_file = open("login.txt", "w")
         text_for_file = login
