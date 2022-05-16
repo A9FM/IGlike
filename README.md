@@ -31,7 +31,7 @@ Best Tool For Increase Instagram Follower.
 
 `apt install git -y`
 
-`git clone https://github.com/A9FM/TGlike`
+`git clone https://github.com/A9FM/IGlike`
 
 `cd IGlike`
 
