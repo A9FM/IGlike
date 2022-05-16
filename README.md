@@ -35,7 +35,7 @@ Best Tool For Increase Instagram Follower.
 
 `cd IGlike`
 
-`python3 IGlike`
+`python3 main.py`
 
 ## Windows
 Dowload and install <a href="https://www.python.org/downloads/windows/">Python</a>
